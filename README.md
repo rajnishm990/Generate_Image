@@ -1,4 +1,4 @@
-# Image Generation APP Using Promp 
+# Image Generation Using Stability AI
 ## Setup Instructions
 
 ### Prerequisites
