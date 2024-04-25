@@ -12,16 +12,18 @@
 1. Clone the repository to your local machine:
 
 ``` git clone https://github.com/rajnishm990/text-to-image-app.git ```
-or
+or\
 Download the zip file 
 
 2. Navigate to the project directory:
 
-``` cd text-to-image-app ```
+``` bash
+cd text-to-image-app 
+```
 
 3. Install dependencies using pip:
 
-``` python
+``` bash
 pip install -r requirements.txt
 ```
 4. Set up environment variables:
@@ -70,5 +72,7 @@ Access the application's endpoint in your web browser or using an HTTP client (e
 ``` bash
 GET /generate-images/
 ```
+in your browser \
+ ``` http://127.0.0.1:8000/ ```
 This endpoint triggers the generation of images based on predefined text prompts. Each time the endpoint is accessed, it initiates the Celery task to generate images asynchronously.
 Monitor the Celery worker logs for task execution and any errors encountered during image generation.
