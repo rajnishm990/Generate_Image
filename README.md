@@ -79,4 +79,4 @@ Monitor the Celery worker logs for task execution and any errors encountered dur
 
 
 ### Output 
-The generated image will be stored inside ``` root_directory/out/the-prompt ```
+The generated image will be stored inside ``` root_directory/out/the-prompt.png ```
