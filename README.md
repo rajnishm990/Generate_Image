@@ -64,7 +64,7 @@ Celery Workers
 2.Start Celery workers to handle asynchronous tasks:
 
 ``` bash
-celery -A image_generation worker -l info
+celery -A image_generation worker --pool=solo -l info
 ```
 This command starts Celery workers using the configuration specified in the Django project.
 
@@ -76,3 +76,7 @@ GET /generate-images/
 
 This endpoint triggers the generation of images based on predefined text prompts. Each time the endpoint is accessed, it initiates the Celery task to generate images asynchronously.
 Monitor the Celery worker logs for task execution and any errors encountered during image generation.
+
+
+### Output 
+The generated image will be stored inside ``` root_directory/out/the-prompt ```
