@@ -11,7 +11,7 @@
 
 1. Clone the repository to your local machine:
 
-``` git clone https://github.com/rajnishm990/text-to-image-app.git ```
+``` git clone https://github.com/rajnishm990/Generate_Image.git ```
 
 or
 
@@ -75,7 +75,7 @@ This command starts Celery workers using the configuration specified in the Djan
 ## Usage
 Access the application's endpoint in your web browser or using an HTTP client (e.g., cURL):
 ``` bash
-GET /generate-images/
+GET /generate/
 ```
 
 This endpoint triggers the generation of images based on predefined text prompts. Each time the endpoint is accessed, it initiates the Celery task to generate images asynchronously.
