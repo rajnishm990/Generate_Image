@@ -60,6 +60,7 @@ python manage.py runserver
 This command will start the Django server on ``` http://127.0.0.1:8000/ ```
 Access the application in your web browser by navigating to the server address.
 Celery Workers
+
 2.Start Celery workers to handle asynchronous tasks:
 
 ``` bash
@@ -72,7 +73,6 @@ Access the application's endpoint in your web browser or using an HTTP client (e
 ``` bash
 GET /generate-images/
 ```
-in your browser \
- ``` http://127.0.0.1:8000/ ```
+
 This endpoint triggers the generation of images based on predefined text prompts. Each time the endpoint is accessed, it initiates the Celery task to generate images asynchronously.
 Monitor the Celery worker logs for task execution and any errors encountered during image generation.
